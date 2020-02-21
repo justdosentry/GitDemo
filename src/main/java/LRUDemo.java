@@ -12,6 +12,7 @@ public class LRUDemo<K,V> extends LinkedHashMap<K,V> {
 
     @Override
     protected boolean removeEldestEntry(Map.Entry<K, V> eldest) {
+        System.out.println("asdasdas");
         return size() > cacheSize;
     }
 }
